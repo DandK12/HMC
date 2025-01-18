@@ -44,7 +44,7 @@ export function AdminLogin() {
               Admin Portal
             </h2>
             <p className="mt-2 text-sm text-[#46525A]">
-              Trans Management System
+              Harmony Medical Center
             </p>
           </div>
 
