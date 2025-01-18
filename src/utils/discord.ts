@@ -65,27 +65,18 @@ export const discordNotifications = {
           {
             name: 'Nama',
             value: name,
-            inline: false,
           },
           {
             name: 'Jabatan',
             value: position,
-            inline: false,
-          },
-          {
-            name: '\u200B',
-            value: '\u200B',
-            inline: false,
           },
           {
             name: 'Tanggal',
             value: formatDayMonthYear(date),
-            inline: false,
           },
           {
             name: 'Waktu',
             value: formatTime(date),
-            inline: false,
           },
         ],
         timestamp: new Date().toISOString(),
@@ -105,32 +96,22 @@ export const discordNotifications = {
           {
             name: 'Nama',
             value: name,
-            inline: false,
           },
           {
             name: 'Jabatan',
             value: position,
-            inline: false,
-          },
-          {
-            name: '\u200B',
-            value: '\u200B',
-            inline: false,
           },
           {
             name: 'Tanggal',
             value: formatDayMonthYear(date),
-            inline: false,
           },
           {
             name: 'Waktu',
             value: formatTime(date),
-            inline: false,
           },
           {
             name: 'Total Durasi',
             value: formatDuration(totalHours),
-            inline: false,
           },
         ],
         timestamp: new Date().toISOString(),
@@ -173,32 +154,18 @@ export const discordNotifications = {
           {
             name: 'Nama',
             value: name,
-            inline: false,
           },
           {
             name: 'Jabatan',
             value: position,
-            inline: false,
-          },
-          {
-            name: '\u200B',
-            value: '\u200B',
-            inline: false,
           },
           {
             name: 'Tanggal',
             value: dateDisplay,
-            inline: false,
           },
           {
             name: 'Status',
             value: status.toUpperCase(),
-            inline: false,
-          },
-          {
-            name: '\u200B',
-            value: '\u200B',
-            inline: false,
           },
           {
             name: 'Alasan',
@@ -242,47 +209,26 @@ export const discordNotifications = {
           {
             name: 'Nama',
             value: name,
-            inline: false,
           },
           {
             name: 'Jabatan',
             value: position,
-            inline: false,
-          },
-          {
-            name: '\u200B',
-            value: '\u200B',
-            inline: false,
           },
           {
             name: 'Passport',
             value: passport,
-            inline: false,
           },
           {
             name: 'Status',
             value: status.toUpperCase(),
-            inline: false,
-          },
-          {
-            name: '\u200B',
-            value: '\u200B',
-            inline: false,
           },
           {
             name: 'Tanggal Pengajuan',
             value: formatDayMonthYear(requestDate),
-            inline: false,
           },
           {
             name: 'Tanggal Permintaan',
             value: formatDateTimeWithSeconds(new Date().toISOString()),
-            inline: false,
-          },
-          {
-            name: '\u200B',
-            value: '\u200B',
-            inline: false,
           },
           {
             name: 'Alasan (In Character)',
