@@ -59,26 +59,44 @@ export const discordNotifications = {
   async checkIn(name: string, position: string, date: Date) {
     try {
       const embed = {
-        title: '🟢 Mulai On Duty',
+        title: '🟢 On Duty',
         color: COLORS.CHECK_IN,
+        thumbnail: {
+          url: 'https://r2.fivemanage.com/gLHbXzESmf7GF88w0OaV9/images/logo_harmony.png',
+        },
         fields: [
           {
             name: 'Nama',
             value: name,
+            inline: true,
           },
           {
             name: 'Jabatan',
             value: position,
+            inline: true,
+          },
+          {
+            name: '\u200B',
+            value: '\u200B',
+            inline: true,
           },
           {
             name: 'Tanggal',
             value: formatDayMonthYear(date),
+            inline: true,
           },
           {
             name: 'Waktu',
             value: formatTime(date),
+            inline: true,
+          },
+          {
+            name: '\u200B',
+            value: '\u200B',
+            inline: true,
           },
         ],
+
         timestamp: new Date().toISOString(),
       };
       await sendDiscordEmbed(embed);
@@ -92,26 +110,44 @@ export const discordNotifications = {
       const embed = {
         title: '🔴 Off Duty',
         color: COLORS.CHECK_OUT,
+        thumbnail: {
+          url: 'https://r2.fivemanage.com/gLHbXzESmf7GF88w0OaV9/images/logo_harmony.png',
+        },
         fields: [
           {
             name: 'Nama',
             value: name,
+            inline: true,
           },
           {
             name: 'Jabatan',
             value: position,
+            inline: true,
+          },
+          {
+            name: '\u200B',
+            value: '\u200B',
+            inline: true,
           },
           {
             name: 'Tanggal',
             value: formatDayMonthYear(date),
+            inline: true,
           },
           {
             name: 'Waktu',
             value: formatTime(date),
+            inline: true,
+          },
+          {
+            name: '\u200B',
+            value: '\u200B',
+            inline: true,
           },
           {
             name: 'Total Durasi',
             value: formatDuration(totalHours),
+            inline: false,
           },
         ],
         timestamp: new Date().toISOString(),
@@ -150,22 +186,39 @@ export const discordNotifications = {
       const embed = {
         title: `📋 Pengajuan Cuti ${statusEmoji}`,
         color: statusColor,
+        thumbnail: {
+          url: 'https://r2.fivemanage.com/gLHbXzESmf7GF88w0OaV9/images/logo_harmony.png',
+        },
         fields: [
           {
             name: 'Nama',
             value: name,
+            inline: true,
           },
           {
             name: 'Jabatan',
             value: position,
+            inline: true,
+          },
+          {
+            name: '\u200B',
+            value: '\u200B',
+            inline: true,
           },
           {
             name: 'Tanggal',
             value: dateDisplay,
+            inline: true,
           },
           {
             name: 'Status',
             value: status.toUpperCase(),
+            inline: true,
+          },
+          {
+            name: '\u200B',
+            value: '\u200B',
+            inline: true,
           },
           {
             name: 'Alasan',
@@ -205,38 +258,62 @@ export const discordNotifications = {
       const embed = {
         title: `📄 Pengajuan Pengunduran Diri ${statusEmoji}`,
         color: statusColor,
+        thumbnail: {
+          url: 'https://r2.fivemanage.com/gLHbXzESmf7GF88w0OaV9/images/logo_harmony.png',
+        },
         fields: [
           {
             name: 'Nama',
             value: name,
+            inline: true,
           },
           {
             name: 'Jabatan',
             value: position,
+            inline: true,
+          },
+          {
+            name: '\u200B',
+            value: '\u200B',
+            inline: true,
           },
           {
             name: 'Passport',
             value: passport,
+            inline: true,
           },
           {
             name: 'Status',
             value: status.toUpperCase(),
+            inline: true,
+          },
+          {
+            name: '\u200B',
+            value: '\u200B',
+            inline: true,
           },
           {
             name: 'Tanggal Pengajuan',
             value: formatDayMonthYear(requestDate),
+            inline: true,
           },
           {
             name: 'Tanggal Permintaan',
             value: formatDateTimeWithSeconds(new Date().toISOString()),
+            inline: true,
+          },
+          {
+            name: '\u200B',
+            value: '\u200B',
+            inline: true,
           },
           {
             name: 'Alasan (In Character)',
-            value: reasonIC || 'Tidak di isi',
+            value: reasonIC || 'Not provided',
           },
           {
             name: 'Alasan (Out of Character)',
-            value: reasonOOC || 'Tidak di isi',
+            value: reasonOOC || 'Not provided',
           },
         ],
         timestamp: new Date().toISOString(),
