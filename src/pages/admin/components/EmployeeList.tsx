@@ -9,6 +9,7 @@ import { Modal } from '../../../components/ui/Modal';
 import { ConfirmationDialog } from '../../../components/ui/ConfirmationDialog';
 
 const POSITIONS = [
+  'Admin',
   'Kepala',
   'Dokter',
   'Perawat',
