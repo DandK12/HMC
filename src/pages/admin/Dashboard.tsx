@@ -118,7 +118,7 @@ export function AdminDashboard() {
         >
           <div className="h-full flex flex-col">
             <div className="flex items-center justify-between h-16 sm:h-20 px-4 border-b border-[#92C0D8]/20">
-              <span className="text-lg font-semibold text-[#105283]">Trans Kota Kita</span>
+              <span className="text-lg font-semibold text-[#105283]">Harmony Medical Center</span>
               <button
                 onClick={() => setSidebarOpen(false)}
                 className="lg:hidden text-[#46525A] hover:text-[#105283]"
