@@ -10,7 +10,7 @@ import { ConfirmationDialog } from '../../../components/ui/ConfirmationDialog';
 
 const POSITIONS = [
   'Admin',
-  'Kepala',
+  'Pimpinan',
   'Dokter',
   'Perawat',
   'Training',
