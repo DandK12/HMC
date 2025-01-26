@@ -193,6 +193,7 @@ export function EmployeePortal() {
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
                   <Button
                     onClick={() => handleStartDuty(selectedEmployee)}
+                    disabled={isOnDuty || isDutyProcessing}
                     variant={isOnDuty ? 'secondary' : 'primary'}
                     className="h-14 relative bg-[#105283] hover:bg-[#0A3B5C] transition-all duration-200 text-sm sm:text-base"
                   >
@@ -210,6 +211,7 @@ export function EmployeePortal() {
 
                   <Button
                     onClick={() => handleEndDuty(selectedEmployee)}
+                    disabled={!isOnDuty || isDutyProcessing}
                     variant={!isOnDuty ? 'secondary' : 'danger'}
                     className="h-14 relative transition-all duration-200 text-sm sm:text-base"
                   >
