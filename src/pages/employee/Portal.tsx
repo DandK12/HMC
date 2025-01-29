@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-import { Clock, FileText, UserCircle, Calendar } from 'lucide-react';
+import { Clock, Calendar } from 'lucide-react';
 import { employeeService } from '../../services/employeeService';
 import { leaveRequestService } from '../../services/leaveRequestService';
 import { discordNotifications } from '../../utils/discord';
 import { useWorkingHours } from '../../hooks/useWorkingHours';
-import { Header } from '../../components/ui/Header';
 import { Button } from '../../components/ui/Button';
 import { Modal } from '../../components/ui/Modal';
 import { EmployeeSelect } from './components/EmployeeSelect';
